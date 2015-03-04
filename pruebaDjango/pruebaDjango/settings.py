@@ -59,8 +59,8 @@ WSGI_APPLICATION = 'pruebaDjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'pruebaAgile',                      
-        'USER': 'alfredo',
+        'NAME': 'pruebaagile',                      
+        'USER': 'administrador',
         'PASSWORD': 'admin',
         'HOST': ''
     }
