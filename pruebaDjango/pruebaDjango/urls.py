@@ -10,6 +10,8 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^inicio/$', views.inicio)
+    url(r'^inicio/$', views.inicio),
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login',{'template_name': 'admin/login.html'}, 
+        name="AgilePro"),
     
 )
