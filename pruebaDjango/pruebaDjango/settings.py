@@ -36,7 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'prueba'
+    'prueba',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -83,6 +83,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
+TEMPLATE_DIRS = (
+  '/home/alfredo/git/pruebaDjango/pruebaDjango/templates/',
+)
 
 STATIC_URL = '/static/'
-STATIC_URL='/templates/'
