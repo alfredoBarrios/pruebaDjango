@@ -5,3 +5,6 @@ from django.contrib import admin
 
 a=10;
 print "Tu hermana"
+
+
+b=25
