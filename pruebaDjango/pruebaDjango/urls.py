@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from prueba import views
+from prueba.views import myLogin
+admin.autodiscover()
 
 
 
@@ -10,8 +11,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^inicio/$', views.inicio),
-    url(r'^accounts/login/$', 'django.contrib.auth.views.login',{'template_name': 'admin/login.html'}, 
-        name="AgilePro"),
+    url(r'^$', myLogin, {'template_name': 'login.html'}),
+    
     
 )
